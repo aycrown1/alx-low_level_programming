@@ -12,7 +12,7 @@ main( ) {
 
 ## Project Content 
 
-[0-preprocessor](### Preprocessor)
+[0-preprocessor](0-preprocessor)
 
 A script that compiles a C file but does not link.
 
@@ -24,7 +24,7 @@ Preprocessor is a program that processes a source code file before it is passed 
 To make this Script we make use of the `gcc` compiler and the `-E` option that invoke the preprocessor without compling or using the linker. The `.o` file extension is an extensionfor object file in C
 
 
-[1-compiler](### compiler)
+[1-compiler](1-compiler)
 
  a script that compiles a C file but does not link.
 
