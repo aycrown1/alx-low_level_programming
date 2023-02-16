@@ -12,7 +12,7 @@ int main(void)
 	char mychar[] = "with proper grammar, but the outcome is a piece of art,";
 
 
-	printf("%c\n", mychar);
+	printf("%s\n", mychar);
 
 
 		return (0);
