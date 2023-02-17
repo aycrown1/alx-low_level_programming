@@ -8,10 +8,7 @@
 
 int main(void)
 {
-/**
- * printing the alphabets in lowercase except "q" and "e"
- *using the ACSII values.
- */
+/* printing the alphabets in lowercase except "q" and "e" */
 int alphabet;
 for
 (alphabet = 97;
