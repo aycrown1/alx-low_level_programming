@@ -9,27 +9,20 @@
 
 void print_number(int n)
 {
-	int divisor = 1;
+int divisor = 1;
 
-	if (n < 0)
-	{
-		/*Handle negative numbers*/
-		putchar('-');
-		n = -n;
-	};
-	while (n / divisor >= 10)
-		/**
-		 * Finding the power of 10 that is dibvisible
-		 * and less than by n to get the first digit
-		 */
-	{
-		divisor *= 10;
-	};
-	while (divisor != 0)
-		/* To control the divisor when it 0, then print the last digit*/
-	{
-		putchar((n / divisor) % 10 + '0');
-		divisor /= 10;
-		/* Decreases the power of 10, after a digit is printed*/
-	};
+if (n < 0)
+{
+	_putchar('-');
+	n = -n;
+};
+while (n / divisor >= 10)
+{
+	divisor *= 10;
+};
+while (divisor != 0)
+{
+	_putchar((n / divisor) % 10 + '0');
+	divisor /= 10;
+};
 }
