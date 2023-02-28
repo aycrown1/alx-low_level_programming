@@ -9,7 +9,7 @@
  * The prototypes of all functions in this directory
  * The prototype of the function _putchar
  */
-
+int _putchar(char c);
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
 int _strlen(char *s);
