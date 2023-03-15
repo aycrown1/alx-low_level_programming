@@ -35,8 +35,6 @@ rm *.o
 the `rm` command, since we no longer need them once they've been bundled into the library.
 
 
-```
-
 The `ar -t` command is a Unix-based command that is used to display a table of contents (TOC) of a static library archive file.
 
 The `ar -x` command to extract a specific object file from the library
