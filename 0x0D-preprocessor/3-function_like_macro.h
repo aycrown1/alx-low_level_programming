@@ -4,7 +4,9 @@
 /**
  * file name  - 3-function_like_macro.h
  * macro name - ABS(x).
- * usage - computes the absolute value of a number x.
+ * ABS - computes the absolute value of a number x.
+ *
+ * @x: an integer or number to be computed
  *
  */
 
