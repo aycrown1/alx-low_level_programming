@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * print_opcodes - print out each opcode in hexadecimal format
+ * @start: start of hex
+ * @n_bytes: number of bytes
+ */
+
 void print_opcodes(char *start, int n_bytes)
 {
 	int i;
@@ -11,6 +17,13 @@ void print_opcodes(char *start, int n_bytes)
 	}
 	printf("\n");
 }
+/**
+ * main - entry point
+ * @argc: number of parameters
+ *
+ * @argv: array of parameters
+ * Return: 0 in success otherwise Error
+ */
 
 int main(int argc, char **argv)
 {
