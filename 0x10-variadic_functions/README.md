@@ -5,18 +5,20 @@
 
 Variadic functions are functions that can take a variable number of arguments. These functions are declared with an ellipsis (...) as the last parameter, indicating that the function may receive an arbitrary number of arguments. 
 
-```
+```c
 #include <stdarg.h>
 
 
 data_type func_name(fixed_args_data_type fixed_args, ...)
 {
 	va_list va_list_object;
+
 	va_start(va_list_object, last_fixed_arg_name);
 
 	/* function body goes here ... */
 
 	va_arg(va_list_object, data_type_of_the_next_arg);
+
 	va_end(va_list_object);
 
 }
