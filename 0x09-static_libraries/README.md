@@ -6,7 +6,7 @@ C static libraries are collections of pre-compiled object code that can be linke
 
 A static library is essentially a collection of object files that have been bundled into a single file, with a ".a" file extension on Unix-based systems
 
-```
+```shell
 # Compile all .c file into an object file
 
  gcc -c *.c
@@ -17,7 +17,7 @@ The `-c` option tells gcc to compile the file but not link it, since we'll be li
 
 After all the .c files have been compiled into object files.
 
-```
+```shell
 # Create the library archive file
 
 ar rcs lib.a *.o
@@ -27,7 +27,7 @@ The `ar` command create the library archive file "liball.a" using all the .o fil
 
 The `-rcs` options specify that we want to create a new archive file, replace any existing files, and include a table of contents in the file.
 
-```
+```shell
 # Clean up the object files
 rm *.o
 
