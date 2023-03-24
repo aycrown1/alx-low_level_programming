@@ -14,7 +14,7 @@ Dynamic allocation happens at runtime, when the program is actually running. Thi
 
  For example, if you're writing a program that reads in a file of unknown length, you might use `malloc()` to allocate a buffer to hold the file's contents.
 
-```
+```c
 int *array = malloc(sizeof(int) * 10);
 ```
 This code allocates enough memory to hold 10 integers, and assigns a pointer to the first byte of the block to `array`.
@@ -24,7 +24,7 @@ This code allocates enough memory to hold 10 integers, and assigns a pointer to 
 
 free() frees up memory previously allocated with malloc()
 
-```
+```c
 free(my_array);
 ```
 
