@@ -21,7 +21,7 @@ type variableName = value;
 ```
  For example:
 
-```
+```c
 int my_int_variable = 2023;
 
 ```
