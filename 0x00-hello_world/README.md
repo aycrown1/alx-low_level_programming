@@ -2,7 +2,7 @@
 
 A "Hello, World!" program is a small piece of code in most general-purpose programming languages, this program is used to illustrate a language's basic syntax. "Hello, World!" programs are often the first a student learns to write in a given language
 
-```
+```c
 #include <stdio.h>
 main( ) {
         printf("hello, world\n");
@@ -57,7 +57,7 @@ This script contains the gcc `-o` option that is use to Specifies a name for the
 
 A C program that prints exactly "Programming is like building a multilingual puzzle, followed by a new line, Uses the `puts()` function as standard output and return 0.
 
-```
+```c
 puts("\"Programming is like building a multilingual puzzle");
 
 return (0);
@@ -67,7 +67,7 @@ return (0);
 
 A  C program that prints exactly with proper grammar, but the outcome is a piece of art, followed by a new line. Uses the `printf()` function and return 0.
 
-```
+```c
 printf("%s\n", mychar);
 
 return (0);
@@ -79,7 +79,7 @@ return (0);
 
 A  C program that prints the size of various types on the computer it is compiled and run on.
 
-```
+```c
 printf("Size of a data type: %lu byte(s)\n", (unsigned long)sizeof(data_type));
 
 ```
@@ -99,7 +99,7 @@ You are not allowed to use any functions listed in the NAME section of the man (
 
 This script uses the `write()` function:
 
-```
+```c
 #include <unistd.h>
 ssize_t write(int fd, const void *buf, size_t count);
 
