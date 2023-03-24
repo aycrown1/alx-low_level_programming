@@ -4,11 +4,11 @@ In C, a function itself is not a variable, but it is possible to define pointers
 A function pointer is a variable that holds the memory address of a function.
 It points to the code of a function rather than to data. Function pointers allow functions to be passed as arguments to other functions.
 
-```
+```c
 data_type (*function_ptr_name)(arguments_data_types);
 
 ```
-```
+```c
 void (*my_function_ptr)(int);
 
 ```
@@ -22,7 +22,7 @@ This fuction takes two arguments: a string representing a name, and a function p
 
 The function print_name calls the function pointer `f` with the `name` argument.
 
-```
+```c
 (*f)(name);
 ```
 
@@ -36,7 +36,7 @@ the size of the array `size`,
 
 The function `array_iterator` iterates over the elements of the array using the `for` loop statement and calls the function pointer `action` with each element as an argument.
 
-```
+```c
 for (size_t i = 0; i < size; i++) {
         (*action)(array[i]);
 ```
