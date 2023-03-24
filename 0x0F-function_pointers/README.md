@@ -16,7 +16,7 @@ To use the function pointer, you must assign it the address of a function with e
 
 This project contains the following tasks:
 
-[0-print_name.c](print name)
+[prints name](0-print_name.c)
 
 This fuction takes two arguments: a string representing a name, and a function pointer `f` that takes a string argument and returns void.
 
@@ -26,7 +26,7 @@ The function print_name calls the function pointer `f` with the `name` argument.
 (*f)(name);
 ```
 
-[1-array_iterator.c](array iterator)
+[array iterator](1-array_iterator.c)
 
 This function takes three arguments: 
 
@@ -42,7 +42,7 @@ for (size_t i = 0; i < size; i++) {
 ```
 
 
-[2-int_index.c](int index)
+[int index](2-int_index.c)
 
 []()
 []()
