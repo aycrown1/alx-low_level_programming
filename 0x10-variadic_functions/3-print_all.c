@@ -1,6 +1,7 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * print_char - functions handle printing the values of char
@@ -78,45 +79,36 @@ void print_string(va_list args)
  * @format:a list of types of arguments passed to the function
  *
  */
+
+
 void print_all(const char *const format, ...)
 {
 	va_list args;
-	char *fmt = (char *)format;
-	int is_arg;
+	printer printers[] = {
+		{"c", print_char};
+		{"i", print_int};
+		{"f", print_float}
+		{"s", print_string};
+	};
+	unsigned int i = 0;
+	unsigned int j = 0;
+	char *separator = "";
 
 	va_start(args, format);
-	is_arg = 1;
 
-	while (*fmt != '\0')
+	while (format != NULL && format[i])
 	{
-		if (!is_arg)
+		j = 0;
+		while (j < 4)
 		{
-			printf(", ");
+			if (format[i] == *printers[j].type)
+			{
+				printers[j].func(separator, args);
+				separator = ", ";
+			}
+			j++;
 		}
-
-		switch (*fmt)
-		{
-		case 'c':
-			print_char(args);
-			break;
-
-		case 'i':
-			print_int(args);
-			break;
-
-		case 'f':
-			print_float(args);
-			break;
-
-		case 's':
-			print_string(args);
-			break;
-		default:
-			fmt++;
-			continue;
-		}
-		fmt++;
-		is_arg = 0;
+		i++;
 	}
 
 	va_end(args);
