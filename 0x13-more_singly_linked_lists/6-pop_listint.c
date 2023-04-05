@@ -6,7 +6,7 @@
  * @head: Pointer to a pointer to the first node of the list.
  *
  * Return: The value of the n element of the head node, or 0 if the list is
- * 	empty.
+ *	empty.
  */
 int pop_listint(listint_t **head)
 {
