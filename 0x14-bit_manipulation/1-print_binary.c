@@ -6,19 +6,9 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int mask = 1;
-	int i;
+	if (n > 1)
+		print_binary(n >> 1);
 
-	for (i = 0; i < 63; i++)
-	{
-		if ((n >> i) == 0)
-			break;
-	}
-
-	while (i >= 0)
-	{
-		_putchar((n >> i) & mask ? '1' : '0');
-		i--;
-	}
+	_putchar((n & 1) + '0');
 }
 
