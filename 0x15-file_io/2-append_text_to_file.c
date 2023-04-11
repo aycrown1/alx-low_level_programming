@@ -4,8 +4,8 @@
 #include <sys/types.h>
 
 /**
- * Appends text to the end of a file.
- * filename: The name of the file to append to.
+ * append_text_to_file - Appends text to the end of a file.
+ * @filename: The name of the file to append to.
  * @text_content: The text to append to the file.
  * Return: 1 on success, -1 on failure.
  */
