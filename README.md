@@ -30,7 +30,7 @@ in this C project we looked into the following concepts in C:
 * C FILE ( INPUTS AND OUTPUTS).
 
 
-All this project where use in creating the `C PRINTF FUNTION`  and ` SIMPLE SHELL IN C`
+All this concepts where use in creating the `C PRINTF FUNTION`  and ` SIMPLE SHELL IN C`
 
 
 ## Author
