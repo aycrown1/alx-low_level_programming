@@ -1,32 +1,38 @@
 #include "main.h"
 
 /**
- * is_prime_number - Checks if a number is prime
- * @n: The number to check
- *
- * Return: 1 if n is prime, otherwise return 0
+ * recursor - the functiom that uses recursion to check
+ *		whether an input integer is a prime number.
+ * @n: input integer.
+ * @divisor:  a possible divisor of the input integer n.
+ * Return: 1 if n is a prime number, 0 otherwise
+ */
+int recursor(int n, int divisor)
+{
+	if (n <= 2)
+	{
+		return (n == 2);
+	}
+	if (divisor * divisor > n)
+	{
+		return (1);
+	}
+	if (n % divisor == 0)
+	{
+		return (0);
+	}
+	return (recursor(n, divisor + 1));
+}
+
+/**
+ * is_prime_number - Check whether n is a prime number
+ * @n: input integer.
+ * Return: 1 if n is a prime number, 0 otherwise
  */
 
 int is_prime_number(int n)
 {
-	if (n == 2 || n == 3)
-	{
-		return (1);
-	}
-	if (n <= 1)
-	{
-		return (0);
-	}
-	if (n % 2 == 0)
-	{
-		return (0);
-	}
-	for (int i = 3; i * i <= n; i += 2)
-	{
-		if (n % i == 0)
-		{
-			return (0);
-		}
-	}
-	return (1);
+	return (recursor(n, 2));
 }
+
+
