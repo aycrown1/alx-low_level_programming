@@ -9,18 +9,16 @@
 
 int is_palindrome(char *s)
 {
+	int i;
 	int len = strlen(s);
-
-	if (len == 0 || len == 1)
+	
+	for (i = 0; i < len / 2; i++)
 	{
-		return (1);
+		if (s[i] != s[len - 1 - i])
+		{
+			return (0);
+		}
 	}
-	if (s[0] == s[len - 1])
-	{
-		return (is_palindrome(s + 1, len - 2));
-	}
-	else
-	{
-		return (0);
-	}
+	return (1);
 }
+
