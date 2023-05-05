@@ -78,7 +78,7 @@ Prototype: `void print_binary(unsigned long int n);`
 * You are not allowed to use malloc
 * You are not allowed to use the % or / operators
 
-[1-print_binary.c](here is the code)
+[here is the code](1-print_binary.c)
 
 ```c
 #include <stdio.h>
@@ -111,7 +111,7 @@ Write a function that returns the value of a bit at a given index.
 * where index is the index, starting from 0 of the bit you want to get
 * Returns: the value of the bit at index index or -1 if an error occured
 
-[2-get_bit.c](here is the code)
+[here is the code](2-get_bit.c)
 
 `get_bit` takes an unsigned long integer n and an unsigned integer index and returns the value of the bit at the given index (counting from the rightmost or least significant bit as index 0). 
 
@@ -124,7 +124,7 @@ Write a function that sets the value of a bit to 1 at a given index.
 * where index is the index, starting from 0 of the bit you want to set
 * Returns: 1 if it worked, or -1 if an error occurred
 
-[3-set_bit.c](here is the code)
+[here is the code](3-set_bit.c)
 
 `set_bit` sets the value of a bit to 1 at a given index in a given unsigned long integer pointed by n.
 
