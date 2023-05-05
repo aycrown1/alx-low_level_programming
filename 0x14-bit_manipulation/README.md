@@ -58,28 +58,28 @@ unsigned int h = b >> 1;
 
 ## Functions.
 
-Write a function that converts a binary number to an `unsigned int`.
+#### Write a function that converts a binary number to an `unsigned int`.
 
 * Prototype:` unsigned int binary_to_uint(const char *b);`
 * where `b` is pointing to a string of `0` and `1` chars
 * Return: the converted number, or 0 ifthere is one or more chars in the string b that is not `0` or `1`
 * `b` is `NULL`
 
-[0-binary_to_uint.c](here is the code)
+##### [0-binary_to_uint.c](here is the code)
 
 `binary_to_uint` takes a pointer to a string of 0s and 1s, and returns the unsigned integer value represented by the binary string.
 
 The function checks if it is a valid binary digit ('0' or '1'). If it is, it shifts the binary value in num left by one bit using the << operator, and then adds the binary value of the current digit using the expression (b[i] - '0').
 
 
-Write a function that prints the binary representation of a number.
+#### Write a function that prints the binary representation of a number.
 
 Prototype: `void print_binary(unsigned long int n);`
 * You are not allowed to use arrays
 * You are not allowed to use malloc
 * You are not allowed to use the % or / operators
 
-[here is the code](1-print_binary.c)
+##### [here is the code](1-print_binary.c)
 
 ```c
 #include <stdio.h>
@@ -106,26 +106,26 @@ When all bits of n have been printed, the function returns to the calling functi
 
 
 
-Write a function that returns the value of a bit at a given index.
+#### Write a function that returns the value of a bit at a given index.
 
 * Prototype: `int get_bit(unsigned long int n, unsigned int index);`
 * where index is the index, starting from 0 of the bit you want to get
 * Returns: the value of the bit at index index or -1 if an error occured
 
-[here is the code](2-get_bit.c)
+##### [here is the code](2-get_bit.c)
 
 `get_bit` takes an unsigned long integer n and an unsigned integer index and returns the value of the bit at the given index (counting from the rightmost or least significant bit as index 0). 
 
 
 
 
-Write a function that sets the value of a bit to 1 at a given index.
+#### Write a function that sets the value of a bit to 1 at a given index.
 
 * Prototype: `int set_bit(unsigned long int *n, unsigned int index);`
 * where index is the index, starting from 0 of the bit you want to set
 * Returns: 1 if it worked, or -1 if an error occurred
 
-[here is the code](3-set_bit.c)
+##### [here is the code](3-set_bit.c)
 
 `set_bit` sets the value of a bit to 1 at a given index in a given unsigned long integer pointed by n.
 
@@ -137,13 +137,13 @@ The function returns 1 to indicate success.
 
 
 
-Write a function that sets the value of a bit to 0 at a given index.
+#### Write a function that sets the value of a bit to 0 at a given index.
 
 * Prototype: `int clear_bit(unsigned long int *n, unsigned int index);`
 * where index is the index, starting from 0 of the bit you want to set
 * Returns: 1 if it worked, or -1 if an error occurred
 
-[here is the code](4-clear_bit.c)
+##### [here is the code](4-clear_bit.c)
 
 `clear_bit` sets the value of a bit to 0 at a given index in a given unsigned long integer pointed by `n`.
 
@@ -155,12 +155,12 @@ The function returns 1 to indicate success.
 
 
 
-Write a function that returns the number of bits you would need to flip to get from one number to another.
+#### Write a function that returns the number of bits you would need to flip to get from one number to another.
 
 * Prototype: `unsigned int flip_bits(unsigned long int n, unsigned long int m);`
 * You are not allowed to use the % or / operators
 
-[here is the code](5-flip_bits.c)
+##### [here is the code](5-flip_bits.c)
 
 
 `flip_bits` calculates the number of bits that need to be flipped to convert one unsigned long integer n into another unsigned long integer m. The function returns the number of bits required for this conversion.
@@ -172,12 +172,12 @@ The function then initializes a variable count to 0 and enters a loop that runs 
 After the loop ends, the function returns the count variable, which contains the number of bits that need to be flipped to convert `n` into `m`.
 
 
-Write a function that checks the endianness.
+#### Write a function that checks the endianness.
 
 * Prototype: `int get_endianness(void);`
 * Returns: 0 if big endian, 1 if little endian
 
-[here is the code](100-get_endianness.c)
+##### [here is the code](100-get_endianness.c)
 
 Endianness refers to the order in which bytes are stored in computer memory. There are two types of endianness: big endian and little endian.
 In a big endian system, the most significant byte (MSB) is stored first (at the lowest memory address), and the least significant byte (LSB) is stored last (at the highest memory address). In a little endian system, the LSB is stored first, and the MSB is stored last.
@@ -205,12 +205,12 @@ The function creates an unsigned integer `i` with the value 1 and a character po
 
 
 
-Find the password for [this program](https://github.com/holbertonschool/0x13.c)
+#### Find the password for [this program](https://github.com/holbertonschool/0x13.c)
  
 * Save the password in the file `101-password`
 * Your file should contain the exact password, no new line, no extra space
 
-[here is the code](101-password)
+##### [here is the code](101-password)
 
 here is how the code is write
 
