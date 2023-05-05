@@ -19,10 +19,16 @@ unsigned int binary_to_uint(const char *b)
 	/* Iterate through each character in the string */
 	while (b[i] != '\0')
 	{
-		/* If the current character is '0' or '1', convert it to an integer and add it to the result */
+		/**
+		 * If the current character is '0' or '1',
+		 * convert it to an integer and add it to the result
+		 */
 		if (b[i] == '0' || b[i] == '1')
 			num = (num << 1) + (b[i] - '0');
-		/* If the current character is not '0' or '1', return 0 to indicate an error */
+		/**
+		 * If the current character is not '0' or '1',
+		 * return 0 to indicate an error
+		 */
 		else
 			return (0);
 		/* Increment the index to move to the next character in the string */
