@@ -65,7 +65,7 @@ unsigned int h = b >> 1;
 * Return: the converted number, or 0 ifthere is one or more chars in the string b that is not `0` or `1`
 * `b` is `NULL`
 
-##### [0-binary_to_uint.c](here is the code)
+##### [here is the code](0-binary_to_uint.c)
 
 `binary_to_uint` takes a pointer to a string of 0s and 1s, and returns the unsigned integer value represented by the binary string.
 
