@@ -65,7 +65,7 @@ unsigned int h = b >> 1;
 * Return: the converted number, or 0 ifthere is one or more chars in the string b that is not `0` or `1`
 * `b` is `NULL`
 
-##### [here is the code](0-binary_to_uint.c)
+[here is the code](0-binary_to_uint.c)
 
 `binary_to_uint` takes a pointer to a string of 0s and 1s, and returns the unsigned integer value represented by the binary string.
 
@@ -79,7 +79,7 @@ Prototype: `void print_binary(unsigned long int n);`
 * You are not allowed to use malloc
 * You are not allowed to use the % or / operators
 
-##### [here is the code](1-print_binary.c)
+[here is the code](1-print_binary.c)
 
 ```c
 #include <stdio.h>
@@ -112,7 +112,7 @@ When all bits of n have been printed, the function returns to the calling functi
 * where index is the index, starting from 0 of the bit you want to get
 * Returns: the value of the bit at index index or -1 if an error occured
 
-##### [here is the code](2-get_bit.c)
+[here is the code](2-get_bit.c)
 
 `get_bit` takes an unsigned long integer n and an unsigned integer index and returns the value of the bit at the given index (counting from the rightmost or least significant bit as index 0). 
 
@@ -125,7 +125,7 @@ When all bits of n have been printed, the function returns to the calling functi
 * where index is the index, starting from 0 of the bit you want to set
 * Returns: 1 if it worked, or -1 if an error occurred
 
-##### [here is the code](3-set_bit.c)
+[here is the code](3-set_bit.c)
 
 `set_bit` sets the value of a bit to 1 at a given index in a given unsigned long integer pointed by n.
 
@@ -143,7 +143,7 @@ The function returns 1 to indicate success.
 * where index is the index, starting from 0 of the bit you want to set
 * Returns: 1 if it worked, or -1 if an error occurred
 
-##### [here is the code](4-clear_bit.c)
+[here is the code](4-clear_bit.c)
 
 `clear_bit` sets the value of a bit to 0 at a given index in a given unsigned long integer pointed by `n`.
 
@@ -160,7 +160,7 @@ The function returns 1 to indicate success.
 * Prototype: `unsigned int flip_bits(unsigned long int n, unsigned long int m);`
 * You are not allowed to use the % or / operators
 
-##### [here is the code](5-flip_bits.c)
+[here is the code](5-flip_bits.c)
 
 
 `flip_bits` calculates the number of bits that need to be flipped to convert one unsigned long integer n into another unsigned long integer m. The function returns the number of bits required for this conversion.
@@ -177,7 +177,7 @@ After the loop ends, the function returns the count variable, which contains the
 * Prototype: `int get_endianness(void);`
 * Returns: 0 if big endian, 1 if little endian
 
-##### [here is the code](100-get_endianness.c)
+[here is the code](100-get_endianness.c)
 
 Endianness refers to the order in which bytes are stored in computer memory. There are two types of endianness: big endian and little endian.
 In a big endian system, the most significant byte (MSB) is stored first (at the lowest memory address), and the least significant byte (LSB) is stored last (at the highest memory address). In a little endian system, the LSB is stored first, and the MSB is stored last.
@@ -210,7 +210,7 @@ The function creates an unsigned integer `i` with the value 1 and a character po
 * Save the password in the file `101-password`
 * Your file should contain the exact password, no new line, no extra space
 
-##### [here is the code](101-password)
+[here is the code](101-password)
 
 here is how the code is write
 
