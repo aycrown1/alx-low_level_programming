@@ -212,7 +212,7 @@ The function creates an unsigned integer `i` with the value 1 and a character po
 
 [here is the code](101-password)
 
-here is how the code is write:
+here is how the code is written:
 
 
 ```c
