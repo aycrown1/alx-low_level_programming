@@ -142,7 +142,7 @@ Write a function that sets the value of a bit to 0 at a given index.
 * where index is the index, starting from 0 of the bit you want to set
 * Returns: 1 if it worked, or -1 if an error occurred
 
-[4-clear_bit.c](here is the code")
+[here is the code](4-clear_bit.c)
 
 `clear_bit` sets the value of a bit to 0 at a given index in a given unsigned long integer pointed by `n`.
 
@@ -159,7 +159,7 @@ Write a function that returns the number of bits you would need to flip to get f
 * Prototype: `unsigned int flip_bits(unsigned long int n, unsigned long int m);`
 * You are not allowed to use the % or / operators
 
-[5-flip_bits.c](here is the code)
+[here is the code](5-flip_bits.c)
 
 
 `flip_bits` calculates the number of bits that need to be flipped to convert one unsigned long integer n into another unsigned long integer m. The function returns the number of bits required for this conversion.
@@ -176,7 +176,7 @@ Write a function that checks the endianness.
 * Prototype: `int get_endianness(void);`
 * Returns: 0 if big endian, 1 if little endian
 
-[100-get_endianness.c](here is the code)
+[here is the code](100-get_endianness.c)
 
 Endianness refers to the order in which bytes are stored in computer memory. There are two types of endianness: big endian and little endian.
 In a big endian system, the most significant byte (MSB) is stored first (at the lowest memory address), and the least significant byte (LSB) is stored last (at the highest memory address). In a little endian system, the LSB is stored first, and the MSB is stored last.
@@ -204,12 +204,13 @@ The function creates an unsigned integer `i` with the value 1 and a character po
 
 
 
-Find the password for [https://github.com/holbertonschool/0x13.c](this program)
+Find the password for [this program](https://github.com/holbertonschool/0x13.c)
  
 * Save the password in the file `101-password`
 * Your file should contain the exact password, no new line, no extra space
 
-[101-password](here is the code)
+[here is the code](101-password)
+
 here is how the code is write
 
 ```shell
