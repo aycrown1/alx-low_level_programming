@@ -1,5 +1,6 @@
 # 0x14-bit_manipulation
 
+Bit manipulation in C refers to the manipulation of individual bits or groups of bits within a larger data structure such as an integer or a character array. It involves performing operations such as setting, clearing, flipping, and checking the values of individual bits within a data structure, often using bitwise operators such as `&` (AND), `|` (OR), `^` (XOR), and `~` (NOT).
 
 ### How to manipulate bits and use bitwise operators
 
