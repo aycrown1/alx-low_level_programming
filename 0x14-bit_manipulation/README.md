@@ -212,8 +212,78 @@ The function creates an unsigned integer `i` with the value 1 and a character po
 
 [here is the code](101-password)
 
-here is how the code is write
+here is how the code is write:
+
+
+```c
+
+#include <stdio.h>     // for printf()
+#include <stdlib.h>    // for malloc()
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ * the password for the crackme3 is "Hol".
+ */
+int main(void)
+{
+    // Allocate memory to hold 5 characters (4 + '\0')
+    char *pass = malloc(sizeof(char) * 5);
+
+    // Initialize the first 3 characters of the string
+    /* Note: the 4th character in the array "4" is  the "end of transmission" (EOT) control character, which is represented by the ^D symbol. This is because the ASCII value of EOT is 4, The EOT character indicates the end of the input to the programs */
+    char charset[5] = {'H', 'o', 'l', 4, '\0'};
+
+    // Copy the characters from charset into pass
+    int i;
+    for (i = 0; charset[i]; i++) {
+        pass[i] = charset[i];
+    }
+
+    // Add the null terminator to pass
+    pass[i] = '\0';
+
+    // Create a command to run that will write the password to a file using the echo command
+    char run[100];
+    sprintf(run, "echo %s > 101-password", pass);
+
+    // Execute the command using system() function to generate the password file.
+    system(run);
+
+    // Free the memory allocated for pass
+    free(pass);
+
+    return (0);
+}
+
+```
+
+After creating the C code run the shell script as an executable file as `pass`:
 
 ```shell
+#!/bin/bash
 
+# Compile password.c with GCC
+gcc -Wall -Werror -Wextra -pedantic password.c -o password
 
+# Run password executable
+./password
+
+# Remove password.c and password executable
+rm password.c password
+
+# Change mode of 101-password to executable
+chmod u+x 101-password
+
+# List the everything in the directory to be sure that 101-password is avaliable.
+ls
+
+```
+
+```shell
+$ vi password.c
+$ vi pass
+$ chmod u+x pass
+$ ./pass
+101-password
+```
