@@ -231,7 +231,12 @@ int main(void)
     char *pass = malloc(sizeof(char) * 5);
 
     // Initialize the first 3 characters of the string
-    /* Note: the 4th character in the array "4" is  the "end of transmission" (EOT) control character, which is represented by the ^D symbol. This is because the ASCII value of EOT is 4, The EOT character indicates the end of the input to the programs */
+    /**
+     * Note: the 4th character in the array "4" is  the "end of transmission" (EOT) control character
+     * which is represented by the ^D symbol.
+     * This is because the ASCII value of EOT is 4,
+     * The EOT character indicates the end of the input to the programs 
+     */
     char charset[5] = {'H', 'o', 'l', 4, '\0'};
 
     // Copy the characters from charset into pass
