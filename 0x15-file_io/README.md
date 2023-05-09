@@ -7,12 +7,12 @@ To create a file, you can use the `fopen()` function, which takes two arguments 
 To open a file, you can use the `fopen()` function, which takes two arguments - the file name and the mode in which the file should be opened.
 modes:
 
-`a`	|	`append`
-------------------------
-`r`	|	`read`
-------------------------
-`w`	|	`write`
------------------------
+|`a`	|	`append`|
+|-----------------------|
+|`r`	|	`read`  |
+|-----------------------|
+|`w`	|	`write` |
+|-----------------------|
 
 To read from a file, you can use the `fread()` function, which takes four arguments - a pointer to the buffer where the data will be stored, the size of each element to be read, the number of elements to be read, and the file pointer.
 
