@@ -10,9 +10,9 @@ modes:
 
 |option	|mode name|
 |-------|--------|
-|`a`	|`append`|
-|`r`	|`read`  |
-|`w`	|`write` |
+|a	|append|
+|r	|read  |
+|w	|write |
 
 To read from a file, you can use the `fread()` function, which takes four arguments - a pointer to the buffer where the data will be stored, the size of each element to be read, the number of elements to be read, and the file pointer.
 
