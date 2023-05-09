@@ -1,4 +1,4 @@
-# 0x15-file_io
+# 0x15. C - File I/O
 
 In C programming language, file input/output (I/O) operations are performed using file handling functions. The process involves creating a file, opening it, performing read or write operations, and then closing the file.
 
