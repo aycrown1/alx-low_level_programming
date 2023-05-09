@@ -3,6 +3,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <errno.h>
+#include <sys/stat.h>
 
 /**
  * open_buffer - allocates a buffer for reading/writing file contents.
@@ -106,6 +107,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
+
 	destination = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (destination == -1)
 	{
@@ -115,6 +117,14 @@ int main(int argc, char *argv[])
 	}
 
 	cp(source, destination);
+	if (chmod(argv[2], 0664) == -1)
+	{
+	dprintf(STDERR_FILENO, "Error: Can't change file permissions\n");
+	close_file(source);
+	close_file(destination);
+	exit(100);
+	}
+
 
 	return (0);
 }
