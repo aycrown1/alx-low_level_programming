@@ -103,7 +103,7 @@ int main(int argc, char *argv[])
 	source = open(argv[1], O_RDONLY);
 	if (source == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't open file %s for reading\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from %s\n", argv[1]);
 		exit(98);
 	}
 
@@ -111,7 +111,7 @@ int main(int argc, char *argv[])
 	destination = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (destination == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't open file %s for writing\n", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to  %s\n", argv[2]);
 		close_file(source);
 		exit(99);
 	}
