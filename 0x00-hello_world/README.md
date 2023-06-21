@@ -88,7 +88,7 @@ printf("Size of a data type: %lu byte(s)\n", (unsigned long)sizeof(data_type));
 
 A script that generates the assembly code (Intel syntax) of a C code and save it in an output file.
 
-This script uses the gcc `-S` option` and the `-masm=dialect` option which generate the assembler code  using selected dialect. Supported choices include intel syntax.
+This script uses the gcc `-S` option and the `-masm=dialect` option which generate the assembler code  using selected dialect. Supported choices include intel syntax.
 
 
 ### [101-quote.c](101-quote.c}
