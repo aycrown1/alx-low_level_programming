@@ -91,7 +91,7 @@ A script that generates the assembly code (Intel syntax) of a C code and save it
 This script uses the gcc `-S` option and the `-masm=dialect` option which generate the assembler code  using selected dialect. Supported choices include intel syntax.
 
 
-### [101-quote.c](101-quote.c}
+### [101-quote.c](101-quote.c)
 
 A C program that prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the standard error.
 
