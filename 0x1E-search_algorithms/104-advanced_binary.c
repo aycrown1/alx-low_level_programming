@@ -40,12 +40,12 @@ int advanced_binary_recursive(int *array, size_t left, size_t right, int value)
 			if (mid == 0 || array[mid - 1] != value)
 				return (mid);
 			else
-				return advanced_binary_recursive(array, left, mid, value);
+				return (advanced_binary_recursive(array, left, mid, value));
 		}
 		else if (array[mid] > value)
-			return advanced_binary_recursive(array, left, mid, value);
+			return (advanced_binary_recursive(array, left, mid, value));
 		else
-			return advanced_binary_recursive(array, mid + 1, right, value);
+			return (advanced_binary_recursive(array, mid + 1, right, value));
 	}
 	return (-1);
 }
@@ -55,7 +55,8 @@ int advanced_binary_recursive(int *array, size_t left, size_t right, int value)
  * @array: pointer to the first element of the array to search in
  * @size: the number of elements in array
  * @value: the value to search for
- * Return: the index where value is located, -1 if value is not present or if array is NULL
+ * Return: the index where value is located,
+ *			-1 if value is not present or if array is NULL
  **/
 int advanced_binary(int *array, size_t size, int value)
 {
